@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ITEC IT Consulting - Software Development - DevOps - Cloud - Infrastructure - Cybersecurity - Documentation" />
+    <title>ITEC</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/eye.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script>
+    <script async type="text/javascript" src="scripts/index.js"></script>
+    <script async type="text/javascript" src="scripts/translations.js"></script>
+    <script async type="text/javascript" src="scripts/theme.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-wrapper">
+            <img class="logo" src="assets/eye.svg" alt="site logo">
+            <h2>ITEC</h2>
+        </div>
+        <button id="toggleNavButton" aria-controls="nav" aria-expanded="false">
+            <svg stroke="var(--text-primary)" viewBox="0 0 100 100">
+                <line class="line top" x1="90" x2="10" y1="40" y2="40" stroke-width="5" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="0"></line>
+                <line class="line bottom" x1="10" x2="90" y1="60" y2="60" stroke-width="5" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="0"></line>
+            </svg>
+        </button>
+        <nav id="nav">
+            <a href="#home">Home</a>
+            <a href="#services">Our services</a>
+            <a href="#contact">Contact us</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <article class="presentation">
+                <h1>ITEC</h1>
+                <h4>IT Consulting &bull; Software Development &bull; DevOps &bull; Cloud &bull; Infrastructure &bull; Cybersecurity &bull; Documentation</h4>
+            </article>
+        </section>
+        <section id="services">
+            <h2>Our services</h2>
+            <article class="cards">
+                <div class="card">
+                    <img src="./assets/dev.svg" alt="">
+                    <div>
+                        <h3>Software development</h3>
+                        <ul>
+                            <li>Software</li>
+                            <li>Microservices</li>
+                            <li>Webapplications</li>
+                            <li>Feature/product pages</li>
+                            <li>Company websites</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/devops.svg" alt="">
+                    <div>
+                        <h3>DevOps</h3>
+                        <ul>
+                            <li>Implementation</li>
+                            <li>Management</li>
+                            <li>Proof of Concept</li>
+                            <li>Consultation</li>
+                            <li>Training</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/cloud.svg" alt="">
+                    <div>
+                        <h3>Cloud services</h3>
+                        <ul>
+                            <li>Microsoft Azure</li>
+                            <li>Cost management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/infra.svg" alt="">
+                    <div>
+                        <h3>Infrastructure</h3>
+                        <ul>
+                            <li>Microsoft Azure</li>
+                            <li>On-premises</li>
+                            <li>Cost management</li>
+                            <li>Proof of Concept</li>
+                            <li>Consultation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/shield.svg" alt="">
+                    <div>
+                        <h3>Cybersecurity</h3>
+                        <ul>
+                            <li>Secure infrastructure</li>
+                            <li>Monitoring</li>
+                            <li>DevSecOps</li>
+                            <li>IAM</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/doc.svg" alt="">
+                    <div>
+                        <h3>Documentation</h3>
+                        <ul>
+                            <li>Technical manuals</li>
+                            <li>Software manuals</li>
+                            <li>API/integration manuals</li>
+                            <li>User manuals</li>
+                            <li>Consultation</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer id="contact">
+        <h2>Contact us</h2>
+        <div class="top">
+            <div class="logo-wrapper">
+                <img class="logo" src="assets/eye.svg" alt="site logo">
+                <h2>ITEC</h2>
+            </div>
+            <ul class="contact-info">
+                <li>
+                    <a href="mailto:toberi@outlook.com"><i class="fas fa-envelope"></i>
+                        toberi@outlook.com</a>
+                </li>
+                <li>
+                    <a href="tel:+46706219593"><i class="fas fa-phone"></i> +46706219593</a>
+                </li>
+            </ul>
+            <div class="socials">
+                <a class="social-icon" aria-label="linkedin" title="Linkedin" href="https://www.linkedin.com/in/toberi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a class="social-icon" aria-label="facebook" title="Facebook" href="https://www.linkedin.com/in/toberi/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a class="social-icon" aria-label="twitter" title="Twitter" href="https://www.linkedin.com/in/toberi/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="social-icon" aria-label="instagram" title="Instagram" href="https://www.linkedin.com/in/toberi/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="footer-buttons">
+                <button id="switchLangBtn" title="Language"><img src="./assets/earth.svg" alt=""><span id="langSpan"></span></button>
+                <button id="themeBtn" title="Switch to dark theme"="Hello"><img id="themeIcon" src="./assets/sun.svg" alt=""><span id="themeSpan"></span></button>
+            </div>
+            <span>
+                <span class="copyright">&copy;</span> Forefront <span id="date"></span>
+            </span>
+        </div>
+    </footer>
+</body>
+<script>
+    var effect = VANTA.CLOUDS({
+        el: "#home",
+        mouseControls: false,
+        touchControls: false,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        backgroundColor: 0x0,
+        skyColor: 0xcfcfcf,
+        cloudColor: 0xdcdcff,
+        cloudShadowColor: 0x141414,
+        sunColor: 0xffffff,
+        sunGlareColor: 0x0,
+        sunlightColor: 0x0,
+        speed: 0.5,
+    });
+</script>
+
+</html>

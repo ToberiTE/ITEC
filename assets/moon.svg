@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   data-name="Layer 1"
+   id="Layer_1"
+   width="14px"
+   height="14px"
+   viewBox="0 0 28 28"
+   version="1.1"
+   sodipodi:docname="moon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false" />
+  <title
+     id="title2" />
+  <path
+     d="m 13.999982,28.000015 a 14,14 0 1 0 -14.000000007813,-14 14,14 0 0 0 14.000000007813,14 z m 13.09677,-14 a 13.096774,13.096774 0 0 1 -12.64516,13.09678 V 0.90324479 A 13.096774,13.096774 0 0 1 27.096752,14.000015 Z"
+     id="path4"
+     style="stroke-width:0.451613" />
+</svg>
