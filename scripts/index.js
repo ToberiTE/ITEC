@@ -3,7 +3,7 @@ var year = date.getFullYear();
 
 document.getElementById("date").innerHTML = year;
 
-const navBtn = document.getElementById("toggleNavButton");
+const navBtn = document.getElementById("nav-toggle");
 const nav = document.getElementById("nav");
 
 navBtn.onclick = function (e) {
@@ -19,3 +19,22 @@ navBtn.onclick = function (e) {
     nav.setAttribute("aria-expanded", "false");
   }
 };
+
+const scroller = document.querySelector(".scroller");
+
+if (window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+  runAnimation();
+}
+
+function runAnimation() {
+  scroller.setAttribute("data-animated", true);
+
+  const scrollerInner = scroller.querySelector(".scroller-inner");
+  const scrollerContent = Array.from(scrollerInner.children);
+
+  scrollerContent.forEach((item) => {
+    const duplicatedItem = item.cloneNode(true);
+    duplicatedItem.setAttribute("aria-hidden", true);
+    scrollerInner.appendChild(duplicatedItem);
+  });
+}

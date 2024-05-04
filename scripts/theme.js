@@ -1,6 +1,6 @@
 const root = document.documentElement;
-const themeBtn = document.getElementById("themeBtn");
-const themeIcon = document.getElementById("themeIcon");
+const themeBtn = document.getElementById("theme-toggle");
+const themeIcon = document.getElementById("theme-toggle-icon");
 const savedTheme = localStorage.getItem("isDarkTheme");
 let isDarkTheme = false;
 

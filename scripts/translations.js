@@ -5,9 +5,9 @@ const translations = {
 
 let currentLang = document.querySelector("html").lang;
 
-const langBtn = document.getElementById("switchLangBtn");
-const langSpan = document.getElementById("langSpan");
-const themeSpan = document.getElementById("themeSpan");
+const langBtn = document.getElementById("lang-toggle");
+const langSpan = document.getElementById("lang-span");
+const themeSpan = document.getElementById("theme-span");
 langSpan.textContent = currentLang.toLocaleUpperCase();
 themeSpan.textContent = currentLang === "en" ? "Theme" : "Tema";
 

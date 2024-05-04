@@ -25,8 +25,8 @@
             <img class="logo" src="assets/eye.svg" alt="site logo">
             <h2>ITEC</h2>
         </div>
-        <button id="toggleNavButton" aria-controls="nav" aria-expanded="false">
-            <svg class="toggleNavIcon" stroke="var(--text-primary)" viewBox="0 0 100 100">
+        <button id="nav-toggle" aria-controls="nav" aria-expanded="false">
+            <svg class="nav-toggle-icon" stroke="var(--text-primary)" viewBox="0 0 100 100">
                 <line class="line top" x1="90" x2="10" y1="40" y2="40" stroke-width="5" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="0"></line>
                 <line class="line bottom" x1="10" x2="90" y1="60" y2="60" stroke-width="5" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="0"></line>
             </svg>
@@ -41,7 +41,17 @@
         <section id="home">
             <article class="presentation">
                 <h1>ITEC</h1>
-                <h4>IT Consulting &bull; Software Development &bull; DevOps &bull; Cloud &bull; Infrastructure &bull; Cybersecurity &bull; Documentation</h4>
+                <div class="scroller">
+                    <ul class="presentation-list scroller-inner">
+                        <li>IT Consulting</li>
+                        <li>Software Development</li>
+                        <li>DevOps</li>
+                        <li>Cloud</li>
+                        <li>Infrastructure</li>
+                        <li>Cybersecurity</li>
+                        <li>Documentation</li>
+                    </ul>
+                </div>
             </article>
         </section>
         <section id="services">
@@ -149,8 +159,8 @@
         </div>
         <div class="bottom">
             <div class="footer-buttons">
-                <button id="switchLangBtn" title="Language"><img src="./assets/earth.svg" alt=""><span id="langSpan"></span></button>
-                <button id="themeBtn" title="Switch to dark theme"="Hello"><img id="themeIcon" src="./assets/sun.svg" alt=""><span id="themeSpan"></span></button>
+                <button id="lang-toggle" title="Language"><img src="./assets/earth.svg" alt=""><span id="lang-span"></span></button>
+                <button id="theme-toggle" title="Switch to dark theme"="Hello"><img id="theme-toggle-icon" src="./assets/sun.svg" alt=""><span id="theme-span"></span></button>
             </div>
             <span>
                 <span class="copyright">&copy;</span> Forefront <span id="date"></span>

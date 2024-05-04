@@ -22,6 +22,7 @@ body {
   font-family: "Fira sans", sans-serif;
   line-height: 1.5;
   letter-spacing: 1px;
+  overflow-x: hidden;
 }
 
 header {
@@ -38,13 +39,45 @@ header {
     align-content: center;
     padding-left: 18vw;
 
-    h4 {
-      text-wrap: nowrap;
-      opacity: 0;
-      scale: 0.9;
-      animation: fade-in ease-in;
-      animation-timeline: view();
-      animation-range: 25vh 100vh;
+    h1 {
+      padding-bottom: 1rem;
+    }
+
+    .scroller {
+      max-width: 600px;
+
+      .scroller-inner {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      &[data-animated="true"] {
+        overflow: hidden;
+        -webkit-mask: linear-gradient(
+          90deg,
+          transparent,
+          #000 20%,
+          #000 80%,
+          transparent
+        );
+        mask: linear-gradient(
+          90deg,
+          transparent,
+          #000 20%,
+          #000 80%,
+          transparent
+        );
+      }
+
+      &[data-animated="true"] .scroller-inner {
+        width: max-content;
+        flex-wrap: nowrap;
+        animation: scroll 40s forwards linear infinite;
+      }
+
+      .presentation-list li {
+        padding-inline: 1rem;
+      }
     }
   }
 }
@@ -81,10 +114,6 @@ header {
         height: 240px;
         object-fit: contain;
         filter: drop-shadow(var(--svg-shadow)) invert(var(--invert-svg));
-      }
-
-      h3,
-      ul {
       }
 
       h3 {
@@ -149,7 +178,8 @@ footer {
 }
 
 header,
-#services {
+#services,
+html {
   background-color: var(--bg-primary);
 }
 
@@ -160,6 +190,7 @@ footer {
 header,
 .logo-wrapper,
 nav,
+.scroller-inner,
 .cards,
 .card,
 footer span,
@@ -255,11 +286,11 @@ button {
   cursor: pointer;
 }
 
-#toggleNavButton {
+#nav-toggle {
   display: none;
 }
 
-ul:is(.contact-info) {
+ul:is(.contact-info, .presentation-list) {
   list-style-type: none;
 }
 
@@ -288,6 +319,12 @@ img {
   }
 }
 
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
 @media (max-width: 110em) {
   #services .cards {
     flex-direction: column;
@@ -304,7 +341,11 @@ img {
 }
 
 @media (max-width: 70em) {
-  #toggleNavButton {
+  .scroller {
+    margin-right: 50%;
+  }
+
+  #nav-toggle {
     display: block;
     position: absolute;
     right: 1.5rem;
@@ -316,16 +357,16 @@ img {
     background-color: transparent;
     cursor: pointer;
 
-    .toggleNavIcon {
+    .nav-toggle-icon {
       transition: rotate 600ms 200ms;
     }
 
     &[data-state="closed"] {
-      .toggleNavIcon {
+      .nav-toggle-icon {
       }
     }
     &[data-state="open"] {
-      .toggleNavIcon {
+      .nav-toggle-icon {
         rotate: 0.5turn;
       }
     }
@@ -407,10 +448,16 @@ img {
     visibility: hidden;
   }
 
-  #services {
+  .cards {
+    gap: 12rem !important;
+
     .card {
-      justify-content: center;
-      gap: 3rem !important;
+      flex-direction: column !important;
+      gap: 1.5rem !important;
+
+      h3 {
+        text-align: center;
+      }
 
       img {
         max-width: 160px !important;
@@ -434,11 +481,12 @@ img {
         height: 38px;
       }
     }
+
     .top {
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      gap: 0;
+      gap: 1rem;
 
       .contact-info {
         margin-bottom: 1.5rem;
