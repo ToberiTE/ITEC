@@ -26,7 +26,7 @@
             <h2>ITEC</h2>
         </div>
         <button id="toggleNavButton" aria-controls="nav" aria-expanded="false">
-            <svg stroke="var(--text-primary)" viewBox="0 0 100 100">
+            <svg class="toggleNavIcon" stroke="var(--text-primary)" viewBox="0 0 100 100">
                 <line class="line top" x1="90" x2="10" y1="40" y2="40" stroke-width="5" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="0"></line>
                 <line class="line bottom" x1="10" x2="90" y1="60" y2="60" stroke-width="5" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="0"></line>
             </svg>
@@ -173,7 +173,7 @@
         sunColor: 0xffffff,
         sunGlareColor: 0x0,
         sunlightColor: 0x0,
-        speed: 0.5,
+        speed: window.matchMedia("(prefers-reduced-motion: no-preference)").matches ? 0.5 : 0,
     });
 </script>
 

@@ -37,6 +37,15 @@ header {
   .presentation {
     align-content: center;
     padding-left: 18vw;
+
+    h4 {
+      text-wrap: nowrap;
+      opacity: 0;
+      scale: 0.9;
+      animation: fade-in ease-in;
+      animation-timeline: view();
+      animation-range: 25vh 100vh;
+    }
   }
 }
 
@@ -54,8 +63,8 @@ header {
   .cards {
     align-items: center;
     flex-direction: column;
-    margin-block: 8rem 12rem;
-    gap: 4rem;
+    margin-block: 12rem 22rem;
+    gap: 8rem;
 
     .card {
       gap: 6rem;
@@ -226,11 +235,11 @@ button {
 }
 
 h1 {
-  font-size: clamp(3rem, 4vw, 1rem * 1000 / 100);
+  font-size: clamp(3rem, 4vw + 0.5rem, 5.25rem);
 }
 
 h3 {
-  font-size: clamp(1.6rem, 1.4vw, 1rem * 1000 / 100);
+  font-size: clamp(1.6rem, 1.25vw + 0.5rem, 3rem);
 }
 
 a,
@@ -256,6 +265,27 @@ ul:is(.contact-info) {
 
 img {
   filter: invert(var(--invert-svg));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .card {
+    opacity: 0;
+    scale: 0.8;
+    animation: fade-in linear forwards;
+    animation-timeline: view(50vh -100vh);
+    animation-range: contain;
+  }
+}
+
+@keyframes fade-in {
+  80% {
+    opacity: 0;
+    scale: 0.8;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 @media (max-width: 110em) {
@@ -286,12 +316,26 @@ img {
     background-color: transparent;
     cursor: pointer;
 
+    .toggleNavIcon {
+      transition: rotate 600ms 200ms;
+    }
+
+    &[data-state="closed"] {
+      .toggleNavIcon {
+      }
+    }
+    &[data-state="open"] {
+      .toggleNavIcon {
+        rotate: 0.5turn;
+      }
+    }
+
     &[data-state="closed"] :is(.top, .bottom) {
-      animation: open-icon 500ms forwards;
+      animation: open-icon 800ms forwards;
     }
 
     &[data-state="open"] :is(.top, .bottom) {
-      animation: close-icon 500ms forwards;
+      animation: close-icon 800ms forwards;
     }
 
     .line.top {
