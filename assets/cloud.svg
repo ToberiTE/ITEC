@@ -1,59 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-
-<svg
-   height="232.16943"
-   width="443.89587"
-   version="1.1"
-   id="Layer_1"
-   viewBox="0 0 253.52114 132.59834"
-   xml:space="preserve"
-   sodipodi:docname="cloud.svg"
-   inkscape:export-filename="cloud.svg"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><defs
-   id="defs19133" /><sodipodi:namedview
-   id="namedview19131"
-   pagecolor="#ffffff"
-   bordercolor="#000000"
-   borderopacity="0.25"
-   inkscape:showpageshadow="2"
-   inkscape:pageopacity="0"
-   inkscape:pagecheckerboard="0"
-   inkscape:deskcolor="#d1d1d1"
-   showgrid="false"
-   inkscape:zoom="1.4575"
-   inkscape:cx="400"
-   inkscape:cy="400"
-   inkscape:window-width="2560"
-   inkscape:window-height="1369"
-   inkscape:window-x="-8"
-   inkscape:window-y="-8"
-   inkscape:window-maximized="1"
-   inkscape:current-layer="g19128" />
-<g
-   id="g19128"
-   transform="translate(-23.119404,-150.50154)"
-   style="fill:#ffffff;stroke:none;stroke-width:10.793;stroke-dasharray:none"
-   inkscape:export-filename="..\Desktop\cloud.svg"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96">
-	
-	<g
-   id="g58064"
-   transform="matrix(0.55486982,0,0,0.55486982,23.119404,90.040155)"
-   inkscape:export-filename="cloud.svg"
-   inkscape:export-xdpi="36"
-   inkscape:export-ydpi="36"><path
-     style="fill:#000000;stroke:none;stroke-width:10.793;stroke-dasharray:none"
-     d="m 295.21,197.2 c 0.009,-0.501 0.019,-1.001 0.019,-1.504 0,-47.9 -38.831,-86.731 -86.731,-86.731 -41.279,0 -75.819,28.838 -84.58,67.466 -8.17,-4.573 -17.581,-7.193 -27.61,-7.193 -31.293,0 -56.661,25.368 -56.661,56.661 0,1.279 0.058,2.544 0.141,3.802 C 16.556,238.324 0,260.685 0,286.918 c 0,33.7 27.319,61.019 61.019,61.019 h 217.62 c 42.125,0 76.274,-34.149 76.274,-76.274 0,-36.433 -25.546,-66.895 -59.703,-74.463 z"
-     id="path19124" /><path
-     style="fill:#000000;stroke:none;stroke-width:10.793;stroke-dasharray:none"
-     d="m 456.902,250.415 c 0,35.78 -29.01,64.79 -64.79,64.79 h -35.56 c 7.23,-12.89 11.36,-27.74 11.36,-43.54 0,-20.44 -7.08,-40.42 -19.95,-56.26 -10.51,-12.93 -24.49,-22.68 -40.08,-28.1 -1.81,-21.6 -10.54,-41.27 -23.94,-56.77 12.97,-11.4 29.98,-18.31 48.6,-18.31 40.68,0 73.66,32.98 73.66,73.67 0,0.42 -0.01,0.85 -0.01,1.28 29.01,6.42 50.71,32.3 50.71,63.24 z"
-     id="path19126" /></g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="443.8959" height="232.1694" viewBox="0 0 253.5211 132.5983">
+  <g stroke-width="10.793">
+    <path d="M163.8031 48.959c.005-.278.0106-.5555.0106-.8346C163.8137 21.5462 142.2675 0 115.6892 0 92.7848 0 73.6196 16.0013 68.7584 37.4349c-4.5333-2.5375-9.7552-3.9912-15.32-3.9912-17.3635 0-31.4395 14.076-31.4395 31.4395 0 .7096.0322 1.4115.0783 2.1096C9.1864 71.7774 0 84.1848 0 98.7408c0 18.699 15.1585 33.8576 33.8576 33.8576h120.7508c23.3739 0 42.3221-18.9483 42.3221-42.3222 0-20.2156-14.1747-37.118-33.1274-41.3173z"/>
+    <path d="M253.5211 78.4863c0 19.8533-16.0967 35.95-35.95 35.95H197.84c4.0118-7.1522 6.3034-15.392 6.3034-24.159 0-11.3415-3.9285-22.4278-11.0697-31.217-5.8317-7.1744-13.5887-12.5844-22.2392-15.5918-1.0043-11.9852-5.8483-22.8995-13.2836-31.5 7.1967-6.3255 16.635-10.1596 26.9667-10.1596 22.5721 0 40.8717 18.2996 40.8717 40.8772 0 .233-.0055.4717-.0055.7103 16.0968 3.5622 28.1374 17.9223 28.1374 35.09z"/>
+  </g>
 </svg>

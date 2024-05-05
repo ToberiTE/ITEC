@@ -17,12 +17,12 @@
   padding: 0;
 }
 
-body {
+body,
+html {
   color: var(--text-primary);
   font-family: "Fira sans", sans-serif;
   line-height: 1.5;
   letter-spacing: 1px;
-  overflow-x: hidden;
 }
 
 header {
@@ -73,6 +73,10 @@ header {
         width: max-content;
         flex-wrap: nowrap;
         animation: scroll 40s forwards linear infinite;
+
+        &:hover {
+          animation-play-state: paused;
+        }
       }
 
       .presentation-list li {
@@ -111,7 +115,7 @@ header {
 
       img {
         max-width: 340px;
-        height: 240px;
+        max-height: 240px;
         object-fit: contain;
         filter: drop-shadow(var(--svg-shadow)) invert(var(--invert-svg));
       }
@@ -128,7 +132,6 @@ header {
 }
 
 footer {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0.5rem 1.5rem;
@@ -144,8 +147,6 @@ footer {
   }
 
   .top {
-    display: flex;
-    width: 100%;
     padding-block: 2rem 3rem;
     gap: 6rem;
     justify-content: center;
@@ -153,10 +154,9 @@ footer {
   }
 
   .socials {
-    display: flex;
     gap: 1rem;
 
-    & a {
+    a {
       display: flex;
       padding: 0.1rem;
       font-size: 28px;
@@ -193,6 +193,9 @@ nav,
 .scroller-inner,
 .cards,
 .card,
+footer,
+.top,
+.socials,
 footer span,
 .footer-buttons,
 button {
@@ -254,9 +257,6 @@ a,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p,
 li,
 span,
@@ -303,7 +303,7 @@ img {
     opacity: 0;
     scale: 0.8;
     animation: fade-in linear forwards;
-    animation-timeline: view(50vh -100vh);
+    animation-timeline: view(50% -100%);
     animation-range: contain;
   }
 }
@@ -325,22 +325,33 @@ img {
   }
 }
 
-@media (max-width: 110em) {
-  #services .cards {
-    flex-direction: column;
-    gap: 3rem;
+@media (min-width: 40em) and (max-width: 60em) {
+  #home {
+    height: 70svh;
+  }
 
-    & .card {
-      max-height: 320px;
+  #services {
+    h2 {
+      padding: 0.5rem 4rem;
+    }
 
-      & img {
-        max-width: 250px;
+    .cards {
+      gap: 0 !important;
+      margin-block: 1rem 6rem !important;
+
+      .card {
+        width: 100% !important;
+        justify-content: center !important;
+
+        img {
+          max-width: 150px !important;
+        }
       }
     }
   }
 }
 
-@media (max-width: 70em) {
+@media (max-width: 40em) {
   .scroller {
     margin-right: 50%;
   }
@@ -361,10 +372,6 @@ img {
       transition: rotate 600ms 200ms;
     }
 
-    &[data-state="closed"] {
-      .nav-toggle-icon {
-      }
-    }
     &[data-state="open"] {
       .nav-toggle-icon {
         rotate: 0.5turn;
@@ -448,8 +455,13 @@ img {
     visibility: hidden;
   }
 
+  main {
+    overflow-x: hidden !important;
+  }
+
   .cards {
-    gap: 12rem !important;
+    margin-block: 4rem 12rem !important;
+    gap: 4rem !important;
 
     .card {
       flex-direction: column !important;
@@ -460,7 +472,8 @@ img {
       }
 
       img {
-        max-width: 160px !important;
+        max-height: 190px !important;
+        max-width: 190px !important;
       }
     }
   }
