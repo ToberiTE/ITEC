@@ -35,7 +35,6 @@ const translations = {
     card_4_li_1: "Cloud security",
     card_4_li_2: "Secure infrastructure",
     card_4_li_3: "Monitoring",
-    card_4_li_4: "Identity and Access Management",
 
     card_5_h3: "Documentation",
     card_5_li_1: "Technical manuals",
@@ -80,7 +79,6 @@ const translations = {
     card_4_li_1: "Molnsäkerhet",
     card_4_li_2: "Säker infrastruktur",
     card_4_li_3: "Övervakning",
-    card_4_li_4: "Identitets- och åtkomsthantering",
 
     card_5_h3: "Dokumentation",
     card_5_li_1: "Tekniska manualer",
