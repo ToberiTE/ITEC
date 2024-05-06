@@ -23,6 +23,7 @@ html {
   font-family: "Fira sans", sans-serif;
   line-height: 1.5;
   letter-spacing: 1px;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -87,6 +88,8 @@ header {
 }
 
 #services {
+  scroll-margin-top: 6rem;
+
   h2 {
     background-color: inherit;
     max-width: fit-content;
@@ -286,6 +289,11 @@ button {
   cursor: pointer;
 }
 
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 #nav-toggle {
   display: none;
 }
@@ -303,7 +311,7 @@ img {
     opacity: 0;
     scale: 0.8;
     animation: fade-in linear forwards;
-    animation-timeline: view(50% -100%);
+    animation-timeline: view(50vh -100vh);
     animation-range: contain;
   }
 }
@@ -364,9 +372,7 @@ img {
     width: 2rem;
     height: 2rem;
     z-index: 3;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
+    background: 0;
 
     .nav-toggle-icon {
       transition: rotate 600ms 200ms;

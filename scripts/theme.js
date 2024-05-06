@@ -84,7 +84,6 @@ function setLightTheme() {
     : (themeBtn.title = "Switch to dark theme");
 }
 
-themeBtn.onclick = function (e) {
-  e.preventDefault();
+themeBtn.onclick = function () {
   toggleTheme();
 };

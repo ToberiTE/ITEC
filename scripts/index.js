@@ -6,8 +6,7 @@ document.getElementById("date").innerHTML = year;
 const navBtn = document.getElementById("nav-toggle");
 const nav = document.getElementById("nav");
 
-navBtn.onclick = function (e) {
-  e.preventDefault();
+navBtn.onclick = function () {
   const currentState = navBtn.getAttribute("data-state");
   if (!currentState || currentState === "closed") {
     navBtn.setAttribute("data-state", "open");
@@ -19,6 +18,15 @@ navBtn.onclick = function (e) {
     nav.setAttribute("aria-expanded", "false");
   }
 };
+
+const links = nav.querySelectorAll("a");
+links.forEach((link) => {
+  link.onclick = function () {
+    navBtn.setAttribute("data-state", "closed");
+    navBtn.setAttribute("aria-expanded", "false");
+    nav.setAttribute("aria-expanded", "false");
+  };
+});
 
 const scroller = document.querySelector(".scroller");
 
