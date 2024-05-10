@@ -263,6 +263,7 @@ li,
 span,
 button {
   font-weight: 300;
+  font-family: inherit;
 }
 
 h1 {

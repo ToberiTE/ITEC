@@ -9,11 +9,6 @@
     <link rel="icon" type="image/svg+xml" href="./assets/eye.svg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script>
-    <script defer src="scripts/index.js"></script>
-    <script defer src="scripts/translations.js"></script>
-    <script defer src="scripts/theme.js"></script>
 </head>
 
 <body>
@@ -148,13 +143,18 @@
         <div class="bottom">
             <div class="footer-buttons">
                 <button id="lang-toggle" title="Language"><img src="./assets/earth.svg" alt=""><span id="lang-span"></span></button>
-                <button id="theme-toggle" title="Switch to dark theme"="Hello"><img id="theme-toggle-icon" src="./assets/sun.svg" alt=""><span id="theme-span"></span></button>
+                <button id="theme-toggle" title="Switch to dark theme"><img id="theme-toggle-icon" src="./assets/sun.svg" alt=""><span id="theme-span"></span></button>
             </div>
             <span>
                 &copy; ITEC<span id="date"></span>
             </span>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script>
+    <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/translations.js"></script>
+    <script defer src="scripts/theme.js"></script>
 </body>
 <script>
     var effect = VANTA.CLOUDS({
