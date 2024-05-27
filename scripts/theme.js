@@ -26,18 +26,9 @@ function toggleTheme() {
 function setDarkTheme() {
   root.style.setProperty("--text-primary", "#fffaf0");
   root.style.setProperty("--bg-primary", "#151515");
-  root.style.setProperty("--bg-secondary", "#0B0B0B");
-  root.style.setProperty(
-    "--link-border",
-    `linear-gradient(
-                      to right,
-                      #151515,
-                      #fffaf0,
-                      #151515
-                    )`
-  );
-  root.style.setProperty("--boxshadow", "rgba(0, 0, 0, 0.5)");
   root.style.setProperty("--invert-svg", "1");
+  root.style.setProperty("--thumbnail-gradient-1", "#0b0b0b");
+  root.style.setProperty("--thumbnail-gradient-2", "#fffaf0");
 
   effect.setOptions({
     skyColor: 0x0,
@@ -56,19 +47,10 @@ function setDarkTheme() {
 function setLightTheme() {
   root.style.setProperty("--text-primary", "#0B0B0B");
   root.style.setProperty("--bg-primary", "#fffaf0");
-  root.style.setProperty("--bg-secondary", "#e6eedf");
-  root.style.setProperty(
-    "--link-border",
-    `linear-gradient(
-            to right,
-            #fffaf0,
-            #0b0b0b,
-            #fffaf0
-          )`
-  );
-  root.style.setProperty("--boxshadow", "rgba(11, 11, 11, 0.2)");
   root.style.setProperty("--invert-svg", "0");
-  root.style.setProperty("--svg-shadow", "0 5px 5px");
+  root.style.setProperty("--svg-shadow", "0 2px 2px");
+  root.style.setProperty("--thumbnail-gradient-1", "#fffaf0");
+  root.style.setProperty("--thumbnail-gradient-2", "#0b0b0b");
 
   effect.setOptions({
     skyColor: 0xcfcfcf,

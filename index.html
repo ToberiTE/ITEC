@@ -6,150 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="ITEC IT Consulting - Software Development - DevOps - Cloud - Infrastructure - Cybersecurity - Documentation" />
     <title>ITEC</title>
-    <link rel="icon" type="image/svg+xml" href="./assets/eye.svg" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="./assets/itec.svg" />
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <header>
         <div class="logo-wrapper">
-            <img class="logo" src="assets/eye.svg" alt="site logo">
-            <h2>ITEC</h2>
+            <img class="logo" src="assets/ITEC.svg" alt="ITEC brand logo">
+            <div class="logo-text">
+                <p>ITEC</p>
+                <span>CONSULTING</span>
+            </div>
         </div>
-        <button id="nav-toggle" aria-controls="nav" aria-expanded="false">
-            <svg class="nav-toggle-icon" stroke="var(--text-primary)" viewBox="0 0 100 100">
-                <line class="line top" x1="90" x2="10" y1="40" y2="40" stroke-width="5" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="0"></line>
-                <line class="line bottom" x1="10" x2="90" y1="60" y2="60" stroke-width="5" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="0"></line>
-            </svg>
-        </button>
-        <nav id="nav">
-            <a data-t="nav_a_1" href="#home">Home</a>
-            <a data-t="s" href="#services">Our services</a>
-            <a data-t="c" href="#contact">Contact us</a>
-        </nav>
+        <ul class="contact-info">
+            <li>
+                <a href="mailto:toberi@outlook.com"><img src="./assets/email.svg"></img>
+                    toberi@outlook.com</a>
+            </li>
+            <li>
+                <a href="tel:+46706219593"><img src="./assets/phone.svg"></img> +46706219593</a>
+            </li>
+        </ul>
     </header>
     <main>
-        <section id="home">
-            <article class="presentation">
-                <h1>ITEC</h1>
-                <div class="scroller">
-                    <ul class="presentation-list scroller-inner">
-                        <li data-t="scroller_li_1">IT Consulting</li>
-                        <li data-t="scroller_li_2">Software Development</li>
-                        <li>DevOps</li>
-                        <li data-t="scroller_li_3">Infrastructure</li>
-                        <li data-t="scroller_li_4">Cybersecurity</li>
-                        <li data-t="scroller_li_5">Documentation</li>
-                    </ul>
-                </div>
-            </article>
-        </section>
-        <section id="services">
-            <h2 data-t="s">Our services</h2>
-            <article class="cards">
-                <div class="card">
-                    <img src="./assets/dev.svg" alt="">
-                    <div>
-                        <h3 data-t="card_1_h3">Development</h3>
-                        <ul>
-                            <li data-t="card_1_li_1">Software</li>
-                            <li data-t="card_1_li_2">Systems</li>
-                            <li data-t="card_1_li_3">Integrations</li>
-                            <li data-t="card_1_li_4">Webapplications</li>
-                            <li data-t="card_1_li_5">Product pages</li>
-                            <li data-t="card_1_li_6">Company websites</li>
-                        </ul>
+        <article class="presentation">
+            <h1>ITEC</h1>
+            <div class="scroller">
+                <ul class="presentation-list scroller-inner">
+                    <li data-t="scroller_li_1">IT Consulting</li>
+                    <li data-t="scroller_li_2">Software Development</li>
+                    <li>DevOps</li>
+                    <li data-t="scroller_li_3">Infrastructure</li>
+                    <li data-t="scroller_li_4">Cybersecurity</li>
+                    <li data-t="scroller_li_5">Documentation</li>
+                </ul>
+            </div>
+        </article>
+        <div class="card">
+            <div class="card-text a">
+                <h3 data-t="card_1_h3">Development</h3>
+                <ul>
+                    <li data-t="card_1_li_1">Software</li>
+                    <li data-t="card_1_li_2">Systems</li>
+                    <li data-t="card_1_li_3">Integrations</li>
+                    <li data-t="card_1_li_4">Webapplications</li>
+                    <li data-t="card_1_li_5">Product pages</li>
+                    <li data-t="card_1_li_6">Company websites</li>
+                </ul>
+            </div>
+            <img class="card-img a" src="./assets/dev.svg" alt="">
+        </div>
+        <div class="card">
+            <div class="card-text b">
+                <h3>DevOps</h3>
+                <ul>
+                    <li data-t="card_2_li_1">Implementation</li>
+                    <li data-t="card_2_li_2">Management</li>
+                    <li data-t="card_2_li_3">Proof of concept</li>
+                    <li data-t="card_2_li_4">Consultation</li>
+                    <li data-t="card_2_li_5">Training</li>
+                </ul>
+            </div>
+            <img class="card-img b" src="./assets/devops.svg" alt="">
+        </div>
+        <div class="card">
+            <div class="card-text c">
+                <h3 data-t="card_3_h3">Infrastructure</h3>
+                <ul>
+                    <li data-t="card_3_li_1">Cloud infrastructure</li>
+                    <li data-t="card_3_li_2">On-premises</li>
+                    <li data-t="card_3_li_3">Cost management</li>
+                    <li data-t="card_3_li_4">Proof of concept</li>
+                    <li data-t="card_3_li_5">Consultation</li>
+                </ul>
+            </div>
+            <img class="card-img c" src="./assets/infra.svg" alt="">
+        </div>
+        <div class="card">
+            <div class="card-text d">
+                <h3 data-t="card_4_h3">Cybersecurity</h3>
+                <ul>
+                    <li data-t="card_4_li_1">Cloud security</li>
+                    <li data-t="card_4_li_2">Secure infrastructure</li>
+                    <li data-t="card_4_li_3">Monitoring</li>
+                    <li>DevSecOps</li>
+                    <li>IAM</li>
+                </ul>
+            </div>
+            <img class="card-img d" src="./assets/shield.svg" alt="">
+        </div>
+        <div class="card">
+            <div class="card-text e">
+                <h3 data-t="card_5_h3">Documentation</h3>
+                <ul>
+                    <li data-t="card_5_li_1">Technical manuals</li>
+                    <li data-t="card_5_li_2">Software manuals</li>
+                    <li data-t="card_5_li_3">API/integration manuals</li>
+                    <li data-t="card_5_li_4">User manuals</li>
+                    <li data-t="card_5_li_5">Consultation</li>
+                </ul>
+            </div>
+            <img class="card-img e" src="./assets/doc.svg" alt="">
+        </div>
+        <footer>
+            <div class="footer-row top">
+                <h2 data-="s">Our services</h2>
+                <div class="right">
+                    <div class="thumbnail-grid">
+                        <button class="thumbnail a">
+                            <img src="./assets/dev.svg" alt="">
+                        </button>
+                        <button class="thumbnail b">
+                            <img src="./assets/devops.svg" alt="">
+                        </button>
+                        <button class="thumbnail c">
+                            <img src="./assets/infra.svg" alt="">
+                        </button>
+                        <button class="thumbnail d">
+                            <img src="./assets/shield.svg" alt="">
+                        </button>
+                        <button class="thumbnail e">
+                            <img src="./assets/doc.svg" alt="">
+                        </button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="./assets/devops.svg" alt="">
-                    <div>
-                        <h3>DevOps</h3>
-                        <ul>
-                            <li data-t="card_2_li_1">Implementation</li>
-                            <li data-t="card_2_li_2">Management</li>
-                            <li data-t="card_2_li_3">Proof of concept</li>
-                            <li data-t="card_2_li_4">Consultation</li>
-                            <li data-t="card_2_li_5">Training</li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="footer-row bottom">
+                <div class="footer-buttons">
+                    <button id="lang-toggle" title="Language"><img src="./assets/earth.svg" alt=""><span id="lang-span"></span></button>
+                    <button id="theme-toggle" title="Switch to dark theme"><img id="theme-toggle-icon" src="./assets/sun.svg" alt=""><span id="theme-span"></span></button>
                 </div>
-                <div class="card">
-                    <img src="./assets/infra.svg" alt="">
-                    <div>
-                        <h3 data-t="card_3_h3">Infrastructure</h3>
-                        <ul>
-                            <li data-t="card_3_li_1">Cloud infrastructure</li>
-                            <li data-t="card_3_li_2">On-premises</li>
-                            <li data-t="card_3_li_3">Cost management</li>
-                            <li data-t="card_3_li_4">Proof of concept</li>
-                            <li data-t="card_3_li_5">Consultation</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./assets/shield.svg" alt="">
-                    <div>
-                        <h3 data-t="card_4_h3">Cybersecurity</h3>
-                        <ul>
-                            <li data-t="card_4_li_1">Cloud security</li>
-                            <li data-t="card_4_li_2">Secure infrastructure</li>
-                            <li data-t="card_4_li_3">Monitoring</li>
-                            <li>DevSecOps</li>
-                            <li>IAM</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./assets/doc.svg" alt="">
-                    <div>
-                        <h3 data-t="card_5_h3">Documentation</h3>
-                        <ul>
-                            <li data-t="card_5_li_1">Technical manuals</li>
-                            <li data-t="card_5_li_2">Software manuals</li>
-                            <li data-t="card_5_li_3">API/integration manuals</li>
-                            <li data-t="card_5_li_4">User manuals</li>
-                            <li data-t="card_5_li_5">Consultation</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-        </section>
+                <span>
+                    &copy; ITEC<span id="date"></span>
+                </span>
+            </div>
+        </footer>
     </main>
-    <footer id="contact">
-        <h2 data-t="c">Contact us</h2>
-        <div class="top">
-            <div class="logo-wrapper">
-                <img class="logo" src="assets/eye.svg" alt="site logo">
-                <h2>ITEC</h2>
-            </div>
-            <ul class="contact-info">
-                <li>
-                    <a href="mailto:toberi@outlook.com"><i class="fas fa-envelope"></i>
-                        toberi@outlook.com</a>
-                </li>
-                <li>
-                    <a href="tel:+46706219593"><i class="fas fa-phone"></i> +46706219593</a>
-                </li>
-            </ul>
-            <div class="socials">
-                <a class="social-icon" aria-label="linkedin" title="Linkedin" href="https://www.linkedin.com/in/toberi/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a class="social-icon" aria-label="facebook" title="Facebook" href="https://www.linkedin.com/in/toberi/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a class="social-icon" aria-label="twitter" title="Twitter" href="https://www.linkedin.com/in/toberi/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a class="social-icon" aria-label="instagram" title="Instagram" href="https://www.linkedin.com/in/toberi/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="bottom">
-            <div class="footer-buttons">
-                <button id="lang-toggle" title="Language"><img src="./assets/earth.svg" alt=""><span id="lang-span"></span></button>
-                <button id="theme-toggle" title="Switch to dark theme"><img id="theme-toggle-icon" src="./assets/sun.svg" alt=""><span id="theme-span"></span></button>
-            </div>
-            <span>
-                &copy; ITEC<span id="date"></span>
-            </span>
-        </div>
-    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script>
     <script defer src="scripts/index.js"></script>
@@ -158,7 +151,7 @@
 </body>
 <script>
     var effect = VANTA.CLOUDS({
-        el: "#home",
+        el: "main",
         mouseControls: false,
         touchControls: false,
         gyroControls: false,

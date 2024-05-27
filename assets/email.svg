@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   viewBox="0 0 98.812894 71.100691"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="C:\Users\Adminpc\AppData\Local\Temp\ink_ext_XXXXXX.svgAR6NO2"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.914906"
+     inkscape:cx="63.39449"
+     inkscape:cy="632.8519"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-229.90741,-144.32704)">
+    <g
+       id="g12834"
+       inkscape:export-filename="email.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       transform="matrix(0.96794984,0,0,0.96794984,7.3685693,5.7650993)">
+      <g
+         id="g12921">
+        <path
+           id="rect12718"
+           style="fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-dasharray:none;paint-order:stroke fill markers"
+           d="m 229.90741,143.14992 v 73.45495 h 102.08473 v -73.32369 l -50.94315,50.94314 -51.0744,-51.0744 z" />
+        <path
+           id="rect12775"
+           style="fill:#000000;stroke:none;stroke-width:31.8738;stroke-linecap:round;stroke-dasharray:none;paint-order:stroke fill markers"
+           d="m 236.2013,143.2202 44.90765,44.90765 44.90765,-44.90765 z" />
+      </g>
+    </g>
+  </g>
+</svg>

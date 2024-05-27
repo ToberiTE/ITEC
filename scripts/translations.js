@@ -1,8 +1,6 @@
 const translations = {
   en: {
-    nav_a_1: "Home",
-    s: "Our Services",
-    c: "Contact us",
+    s: "Our services",
 
     scroller_li_1: "IT Consulting",
     scroller_li_2: "Software Development",
@@ -44,9 +42,7 @@ const translations = {
     card_5_li_5: "Consultation",
   },
   sv: {
-    nav_a_1: "Hem",
     s: "Våra tjänster",
-    c: "Kontakta oss",
 
     scroller_li_1: "IT Konsultation",
     scroller_li_2: "Systemutveckling",
