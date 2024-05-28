@@ -300,7 +300,6 @@ button {
   display: flex;
 }
 
-section,
 .main-inner,
 h2,
 h2::before,
@@ -328,7 +327,6 @@ footer,
 a,
 h1,
 h2,
-h3,
 p,
 li,
 span,
