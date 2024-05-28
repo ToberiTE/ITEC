@@ -8,7 +8,7 @@ const translations = {
     scroller_li_4: "Cybersecurity",
     scroller_li_5: "Documentation",
 
-    card_1_h3: "Development",
+    card_1_h1: "Development",
     card_1_li_1: "Software",
     card_1_li_2: "Systems",
     card_1_li_3: "Integrations",
@@ -22,19 +22,19 @@ const translations = {
     card_2_li_4: "Consultation",
     card_2_li_5: "Training",
 
-    card_3_h3: "Infrastructure",
+    card_3_h1: "Infrastructure",
     card_3_li_1: "Cloud infrastructure",
     card_3_li_2: "On-premises",
     card_3_li_3: "Cost management",
     card_3_li_4: "Proof of concept",
     card_3_li_5: "Consultation",
 
-    card_4_h3: "Cybersecurity",
+    card_4_h1: "Cybersecurity",
     card_4_li_1: "Cloud security",
     card_4_li_2: "Secure infrastructure",
     card_4_li_3: "Monitoring",
 
-    card_5_h3: "Documentation",
+    card_5_h1: "Documentation",
     card_5_li_1: "Technical manuals",
     card_5_li_2: "Software manuals",
     card_5_li_3: "API / integration manuals",
@@ -50,7 +50,7 @@ const translations = {
     scroller_li_4: "Cybersäkerhet",
     scroller_li_5: "Dokumentation",
 
-    card_1_h3: "Utveckling",
+    card_1_h1: "Utveckling",
     card_1_li_1: "Mjukvara",
     card_1_li_2: "System",
     card_1_li_3: "Integrationer",
@@ -64,19 +64,19 @@ const translations = {
     card_2_li_4: "Konsultation",
     card_2_li_5: "Utbildning",
 
-    card_3_h3: "Infrastruktur",
+    card_3_h1: "Infrastruktur",
     card_3_li_1: "Molninfrastruktur",
     card_3_li_2: "On-premises",
     card_3_li_3: "Kostnadshantering",
     card_3_li_4: "Bevis på koncept",
     card_3_li_5: "Konsultation",
 
-    card_4_h3: "Cybersäkerhet",
+    card_4_h1: "Cybersäkerhet",
     card_4_li_1: "Molnsäkerhet",
     card_4_li_2: "Säker infrastruktur",
     card_4_li_3: "Övervakning",
 
-    card_5_h3: "Dokumentation",
+    card_5_h1: "Dokumentation",
     card_5_li_1: "Tekniska manualer",
     card_5_li_2: "Programvarumanualer",
     card_5_li_3: "API / integrationsmanualer",
