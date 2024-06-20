@@ -11,18 +11,21 @@ function runAnimations() {
   scroller.setAttribute("data-animated", true);
   const scrollerInner = scroller.querySelector(".scroller-inner");
   const scrollerContent = Array.from(scrollerInner.children);
+
   scrollerContent.forEach((item) => {
     const duplicatedItem = item.cloneNode(true);
     duplicatedItem.setAttribute("aria-hidden", true);
     scrollerInner.appendChild(duplicatedItem);
   });
 }
+
 let prevEl = null;
 thumbnails.forEach((thumbnail) => {
   const classList = Array.from(thumbnail.classList);
   const targetEl = classList.find((cls) =>
     ["a", "b", "c", "d", "e"].includes(cls)
   );
+
   thumbnail.addEventListener("click", function () {
     const currentThumbnail = document.querySelector(`.thumbnail.${targetEl}`);
     const currentText = document.querySelector(`.card-text.${targetEl}`);

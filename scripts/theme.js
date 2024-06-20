@@ -26,13 +26,7 @@ function setDarkTheme() {
   root.style.setProperty("--invert-svg", "1");
   root.style.setProperty("--thumbnail-gradient-1", "#0b0b0b");
   root.style.setProperty("--thumbnail-gradient-2", "#fffaf0");
-  effect.setOptions({
-    skyColor: 0x0,
-    cloudColor: 0x0,
-    cloudShadowColor: 0x0,
-    sunGlareColor: 0xffffff,
-    sunlightColor: 0x414141,
-  });
+  root.style.setProperty("--background-image", "url(./assets/m_dark.png)");
   themeIcon.src = "./assets/moon.svg";
   currentLang === "sv"
     ? (themeBtn.title = "Växla till ljust tema")
@@ -45,13 +39,7 @@ function setLightTheme() {
   root.style.setProperty("--svg-shadow", "0 2px 2px");
   root.style.setProperty("--thumbnail-gradient-1", "#fffaf0");
   root.style.setProperty("--thumbnail-gradient-2", "#0b0b0b");
-  effect.setOptions({
-    skyColor: 0xcfcfcf,
-    cloudColor: 0xdcdcff,
-    cloudShadowColor: 0x141414,
-    sunGlareColor: 0x0,
-    sunlightColor: 0x0,
-  });
+  root.style.setProperty("--background-image", "url(./assets/m_light.png)");
   themeIcon.src = "./assets/sun.svg";
   currentLang === "sv"
     ? (themeBtn.title = "Växla till mörkt tema")
