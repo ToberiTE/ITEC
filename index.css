@@ -492,6 +492,10 @@ img {
     }
   }
 
+  .scroller {
+    margin-inline: 2rem;
+  }
+
   .thumbnail-grid {
     bottom: 0 !important;
     left: 0;
